@@ -46,6 +46,8 @@ Essa arquitetura foi escolhida por ser desacoplada, escalável e resiliente a fa
 - **RabbitMQ** (CloudAMQP)
 - **SMTP** (Gmail)
 - **Maven**
+- **IntelliJ Idea**
+- **Draw Io**
 
 ---
 
