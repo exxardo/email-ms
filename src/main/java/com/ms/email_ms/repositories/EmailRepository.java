@@ -5,7 +5,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.UUID;
 
-public interface EmailRepository  extends JpaRepository<Email, UUID> {
-
-
+/**
+ * Repositório responsável por realizar operações de persistência para a entidade Email.
+ * Extende JpaRepository para fornecer métodos prontos para operações de CRUD e consultas personalizadas.
+ */
+public interface EmailRepository extends JpaRepository<Email, UUID> {
 }
