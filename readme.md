@@ -63,17 +63,17 @@ Essa arquitetura foi escolhida por ser desacoplada, escalável e resiliente a fa
 No arquivo `src/main/resources/application.properties`, configure as seguintes propriedades:
 
 ```properties
-spring.datasource.url=jdbc:postgresql://<host>:<port>/<database>
-spring.datasource.username=<username>
-spring.datasource.password=<password>
-broker.queue.email.name=<nome-da-fila>
-spring.rabbitmq.host=<host-rabbitmq>
-spring.rabbitmq.username=<username>
-spring.rabbitmq.password=<password>
-spring.mail.host=smtp.gmail.com
-spring.mail.port=587
-spring.mail.username=seu-email@gmail.com
-spring.mail.password=<sua-senha>
+server.port=8082
+spring.datasource.url= jdbc:postgresql://localhost:5432/db_email
+spring.datasource.username=postgres
+spring.datasource.password=root
+spring.jpa.hibernate.ddl-auto=update
+spring.rabbitmq.addresses=URL BROKER
+broker.queue.email.name=defaut.email
+spring.mail.host+=SMTP ESCOLHIDO
+spring.mail.port=PORTA SMTP
+spring.mail.username=EMAIL REMETENTE
+spring.mail.password=SENHA GERADA
 spring.mail.properties.mail.smtp.auth=true
 spring.mail.properties.mail.smtp.starttls.enable=true
 ```
